@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+* a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none; 
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+p, a {
+    font-size: 1.5rem;
+}
+
+header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  position: sticky;
+  top: 0;
+  padding: 30px;
+  align-items: center;
+}
+
+.logo a {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+nav .nav-list {
+    display: flex;
+}
+
+nav .nav-list li:not(:last-child) {
+    padding-right: 20px;
+}
+
+button {
+    padding: 1rem 1.5rem;
+}
+/* .btn-contact:hover {
+    background-color: #fff;
+} */

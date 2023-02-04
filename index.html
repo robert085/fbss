@@ -12,110 +12,121 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>FBBS</title>
+    <title>Wellnown</title>
   </head>
 
   <body>
     <!-- MAIN MENU -->
     <header>
-      <div class="logo"><a href="#">Robert Kunc</a></div>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#" class="link">About Me</a></li>
-          <li><a href="#" class="link">Service</a></li>
-          <li><a href="#" class="link">Resources</a></li>
-        </ul>
-      </nav>
-      <div class="btn">
-        <button type="button" class="btn-contact">Contact me</button>
+      <div class="container">
+        <div class="menu">
+          <div class="logo"><a href="#hero">wellnown</a></div>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="#about-me" class="link">About Me</a></li>
+              <li><a href="#service" class="link">Service</a></li>
+              <li><a href="#portfolio" class="link">Portfolio</a></li>
+              <li><a href="#resources" class="link">Resources</a></li>
+            </ul>
+          </nav>
+          <div class="button">
+            <button type="button" class="btn">Contact me</button>
+          </div>
+        </div>
       </div>
     </header>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="container">
-        <h2>Best investment for the future of your business!</h2>
-        <p>I help small business grow by 10% in just one year.</p>
-        <div class="btn-group">
-          <button class="btn-primary"><a href="#">Save a seat</a></button>
-          <button class="btn-secondary"><a href="#">Call me</a></button>
+        <div class="heading">
+          <h1>Creative solutions for your business success.</h1>
+          <p>strategy | design | development</p>
+          <div class="btn-group">
+            <button class="btn btn-primary"><a href="#">Save a seat</a></button>
+            <button class="btn btn-secondary"><a href="#">Call me</a></button>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ABOUT ME -->
-    <section class="about-me">
-      <div class="container">
-        <div class="col-6">
+    <section class="about-me" id="about-me">
+      <div class="container container-about">
+        <div class="col-6 about-img">
           <img src="/img/portrait.jpg" alt="my face" class="image" />
         </div>
-        <div class="col-6">
-          <div class="content">
-            <h2>Robert Kunz</h2>
-            <p>Designer and Web Developer</p>
+        <div class="col-6 content">
+          <div class="content-inner">
+            <p>Hi! I am</p>
+            <h2>
+              Robert Kunc<br /><span class="subheading"
+                >Designer and Web Developer</span
+              >
+            </h2>
+
             <p>
-              I am here to help you make your business attract new clients and
-              gain 10% profit in just one year.
+              I help small business clarify their message and provide creative
+              solution to their online presence.
             </p>
-            <button class="btn-primary"><a href="#">More about me</a></button>
+            <button class="btn"><a href="#">More about me</a></button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SERVICE -->
-    <section class="service">
+    <section class="service" id="service">
       <div class="container">
-        <div class="feature">
-          <img src="/icons/strategy.png" alt="strategy" />
-          <h3>Strategy</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <div class="feature">
-          <img src="/icons/design.png" alt="design" />
-          <h3>Design</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <div class="feature">
-          <img src="/icons/development.png" alt="development" />
-          <h3>Execution</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <h2>Service</h2>
+        <div class="feature-container">
+          <div class="feature">
+            <img src="/icons/strategy.png" alt="strategy" />
+            <h3>Strategy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="feature">
+            <img src="/icons/design.png" alt="design" />
+            <h3>Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="feature">
+            <img src="/icons/development.png" alt="development" />
+            <h3>Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- PORTFOLIO -->
-    <div class="container-fluid">
-      <div class="portfolio">
-        <figure class="img">
+    <section class="portfolio" id="portfolio" >
+      <div class="container port-grid">
+        <figure class="img img-1">
           <img src="/img/packaging-1.jpg" alt="1" />
           <figcaption>Lorem, ipsum dolor.</figcaption>
         </figure>
-        <figure class="img">
+        <figure class="img img-2">
           <img src="/img/packaging-2.jpg" alt="2" />
           <figcaption>Lorem, ipsum dolor.</figcaption>
         </figure>
-        <figure class="img">
+        <figure class="img img-3">
           <img src="/img/packaging-3.jpg" alt="3" />
           <figcaption>Lorem, ipsum dolor.</figcaption>
         </figure>
-        <figure class="img">
+        <figure class="img img-4">
           <img src="/img/packaging-4.jpg" alt="4" />
           <figcaption>Lorem, ipsum dolor.</figcaption>
         </figure>
-        <figure class="img">
+        <figure class="img img-5">
           <img src="/img/packaging-5.jpg" alt="5" />
           <figcaption>Lorem, ipsum dolor.</figcaption>
         </figure>
-        <figure class="img">
+        <figure class="img img-6">
           <img src="/img/packaging-6.jpg" alt="6" />
           <figcaption>Lorem, ipsum dolor.</figcaption>
         </figure>
-        <figure class="img">
-          <img src="/img/packaging-7.jpg" alt="7" />
-          <figcaption>Lorem, ipsum dolor.</figcaption>
-        </figure>
       </div>
-    </div>
+    </section>
   </body>
 </html>

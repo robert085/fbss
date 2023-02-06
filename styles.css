@@ -4,6 +4,7 @@
   --light: #ddd;
   --high-light: #eee;
   --red: #e04522;
+  --red-light: #fa5935;
 }
 
 * {
@@ -79,9 +80,9 @@ p {
   h1 {
     font-size: 3.5rem;
   }
-  h2 {
+  /* h2 {
     font-size: 1.8rem;
-  }
+  } */
   h3 {
     font-size: 1.5rem;
     font-weight: 600;
@@ -108,6 +109,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+}
+
+.menu .hidden {
+  display: none;
 }
 
 .logo a {
@@ -143,6 +148,15 @@ nav .nav-list li:not(:last-child) {
   color: var(--light);
   overflow: hiden;
 }
+.btn-primary {
+  background-color: var(--red);
+  color: var(--high-light);
+}
+.btn-primary:hover {
+  background-color: var(--red-light);
+  color: var(--high-light);
+}
+
 .hero {
   height: 100vh;
   display: flex;
@@ -165,6 +179,9 @@ nav .nav-list li:not(:last-child) {
 .heading p {
   text-transform: uppercase;
 }
+.btn-group {
+  margin-top: 4rem;
+}
 .btn-group > * {
   margin: 1rem;
 }
@@ -172,6 +189,9 @@ nav .nav-list li:not(:last-child) {
 @media only screen and (max-width: 760px) {
   .heading {
     width: 90%;
+  }
+  .menu nav {
+    display: none;
   }
 }
 
@@ -183,7 +203,7 @@ nav .nav-list li:not(:last-child) {
 
 .about-img img {
   display: block;
-  width: 100%;
+  width: 90%;
   margin-left: auto;
 }
 
@@ -324,7 +344,7 @@ nav .nav-list li:not(:last-child) {
 }
 .container-quote {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .testimonial-inner .img-frame {
@@ -337,7 +357,15 @@ nav .nav-list li:not(:last-child) {
 .img-frame img {
   width: 100%;
 }
+.quote {
+  position: relative;
+  padding-bottom: 3rem;
+  padding-right: 10%;
+}
 .quote-mark {
-  font-size: 3rem;
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  font-size: 6rem;
   color: var(--red);
 }

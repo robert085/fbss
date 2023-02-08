@@ -32,7 +32,6 @@ body {
 li {
   list-style: none;
 }
-
 .container {
   width: 90vw;
   margin: 0 auto;
@@ -45,8 +44,7 @@ li {
   width: 100%;
 }
 .col-6 {
-  width: 50%;
-  padding: 15px;
+  width: 45%;
 }
 
 * section {
@@ -199,12 +197,14 @@ nav .nav-list li:not(:last-child) {
 .container-about {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5rem;
+
 }
 
 .about-img img {
   display: block;
-  width: 90%;
-  margin-left: auto;
+  width: 100%;
 }
 
 .about-img img::before {
@@ -241,6 +241,9 @@ nav .nav-list li:not(:last-child) {
 @media only screen and (max-width: 900px) {
   .col-6 {
     width: 100%;
+  }
+  .about-me img {
+    width: 100%
   }
   .about-me .content p {
     width: 100%;
@@ -339,6 +342,30 @@ nav .nav-list li:not(:last-child) {
 }
 
 /* TESTIMONIAL */
+.test-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.test-flex h2 {
+  align-self: center; 
+  position: relative;
+  color: var(--high-light);
+}
+.test-flex h2::before {
+  content: "";
+  position:absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  /* padding: 2rem; */
+  background-color: var(--red);
+}
+
+.test-flex h2 span {
+  position: relative;
+}
 .testimonial-inner {
   padding: 4rem 0;
 }
@@ -359,8 +386,7 @@ nav .nav-list li:not(:last-child) {
 }
 .quote {
   position: relative;
-  padding-bottom: 3rem;
-  padding-right: 10%;
+  padding-bottom: 4rem;
 }
 .quote-mark {
   position: absolute;
@@ -369,3 +395,29 @@ nav .nav-list li:not(:last-child) {
   font-size: 6rem;
   color: var(--red);
 }
+
+/* CONTACT FORM */
+.contact {
+  background-color: var(--high-light);
+}
+.contact > p,
+.contact > h2 {
+  text-align: center;
+}
+
+.contact div p:first-child {
+  color: var(--red);
+}
+
+.flex-contact {
+  display: flex;
+  flex-direction: column;
+}
+.flex-contact input {
+  border: none;
+  border-bottom: 1px solid var(--dark);
+  background-color: rgba(0, 0, 0, 0);
+  height: 4rem;
+  margin-bottom: 2rem;
+}
+

@@ -18,19 +18,6 @@ menu.addEventListener('click', function (e) {
 const logoMob = document.querySelector('.logo-mobile');
 const logoDesk = document.querySelector('.logo-desktop');
 
-// const hideMenu = function (x) {
-//   if (x.matches) {
-//     console.log(x);
-//     logoDesk.classList.add('hidden');
-//     logoMob.classList.remove('hidden')
-//   } else {
-//     logoDesk.classList.remove('hidden');
-//     logoMob.classList.add('hidden');
-//   }
-// }
-
-// hideMenu(x)
-
 addEventListener('resize', (e) => {
   const width = e.target.innerWidth;
   if (width <= 760) {

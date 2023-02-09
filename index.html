@@ -21,18 +21,17 @@
     <header>
       <div class="container">
         <div class="menu">
-          <div class="logo logo-desktop"><a href="#hero">Robert Kunc</a></div>
+          <div class="logo logo-desktop"><a href="#hero">Robert Koletzky</a></div>
           <div class="logo logo-mobile hidden"><a href="#hero">RK</a></div>
           <nav>
             <ul class="nav-list">
               <li><a href="#about-me" class="nav-link">About Me</a></li>
               <li><a href="#service" class="nav-link">Service</a></li>
               <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-              <li><a href="#resources" class="nav-link">Resources</a></li>
             </ul>
           </nav>
           <div class="button">
-            <button type="button" class="btn">Contact me</button>
+            <a href="#contact"><button type="button" class="btn">Contact me</button></a>
           </div>
         </div>
       </div>
@@ -62,14 +61,13 @@
           <div class="content-inner">
             <p>Hi! I am</p>
             <h2>
-              Robert Kunc<br /><span class="subheading"
+              Robert Koletzky<br /><span class="subheading"
                 >Designer and Web Developer</span
               >
             </h2>
 
             <p>
-              I help small business clarify their message and provide creative
-              solutions to their online presence.
+              I help small businesses clarify their message and provide creative solutions for their online presence.
             </p>
             <button class="btn"><a href="#">More about me</a></button>
           </div>
@@ -137,7 +135,7 @@
       <h2>What they say about me?</h2>
       <div class="testimonial-inner">
         <div class="container-quote">
-          <div class="quote">
+          <div class="col-6 quote">
             <div class="img-frame">
               <img src="img/cust-1.jpg" alt="">
             </div>
@@ -145,7 +143,7 @@
             <blockquote><span class="quote-mark">&#8220</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, mollitia cum repellat possimus tempore facilis.<span class="quote-mark">&#8221</span></blockquote>
             
           </div>
-          <div class="quote">
+          <div class="col-6 quote">
             <div class="img-frame">
               <img src="img/cust-2.jpg" alt="">
             </div>
@@ -158,19 +156,29 @@
     </section>
 
     <!-- CONTACT ME -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container-md">
       
         <p>Would you like to work with me?</p>
         <h2>Contact me!</h2>
-        <form target="_parent" class="flex-contact">
+        <form target="_parent" class="form-contact">
 
-          <label for="fn" >Your Name here:</label>
-          <input type="text" id="fn" name="fn">
+          <label for="fn" >Your Name:</label>
+          <input type="text" placeholder="Insert your Name here..." id="fn" name="fn">
           <label for="text-input">How can I help You?</label>
-          <input type="text" id="text-input" name="text-input">
+          <input type="text" placeholder="Write your text here..." id="text-input" name="text-input">
+          <button class="btn btn-primary">Submit</button>
         </form>
       </div>
     </section>
+  <footer class="footer">
+    <div class="container-md footer-flex">
+      <div class="logo logo-desktop"><a href="#hero">Robert Koletzky</a></div>
+      <div class="credits">CA - Challenge Project: Company Home Page with Flexbox</div>
+    </div>
+    <div class="footer-bottom">
+      <div class="credits">All image credits goes to artists from <a href="https://unsplash.com/">Unsplash.com</a></div>
+    </div>
+  </footer>
   </body>
 </html>
